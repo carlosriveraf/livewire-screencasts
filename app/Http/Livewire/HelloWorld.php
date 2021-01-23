@@ -8,7 +8,7 @@ use Livewire\Component;
 class HelloWorld extends Component
 {
 
-    public $name;
+    public $name = "default";
 
     public function render() {
         return view('livewire.hello-world');

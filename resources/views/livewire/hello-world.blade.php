@@ -1,11 +1,11 @@
 <div>
     
     {{-- bug 1 --}}
-    <form action="{{route('view_button')}}">
+    {{-- <form action="{{route('view_button')}}">
         <input wire:model="name" type="text" name="id"><br>
         You entered 1: {{ $name }}
         <button type="submit">button</button>
-    </form>
+    </form> --}}
 
     {{-- bug 2 --}}
     
@@ -19,9 +19,9 @@
     {{-- <input wire:model="name" type="text" id="id"><br>
     You entered 3: {{ $name }} --}}
     
+    {{-- <script>alert('ga')</script> --}}
 
-
-    {{-- <input wire:model="name" type="text"> --}}
+    <input wire:model="name" name="name" id="id" type="text">
 
     {{-- <input wire:model="loud" type="checkbox">  --}}
     
@@ -39,7 +39,7 @@
         <button>Reset Name</button>
     </form> --}}
 
-    {{-- Hello {{ $name }} --}}
+    Hello {{ $name }}
 
     {{-- @foreach ($names as $name)
         @livewire('say-hi', ['name' =>$name], key())    
